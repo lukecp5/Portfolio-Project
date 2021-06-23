@@ -13,7 +13,7 @@ body {
   /* Centers along the main axis determined by flex-direction */
   justify-content: center;
   /* Centers along the opposite axis */
-  align-items: center;
+  align-items:center;
   width: 90%;
   /* Uses the height of the viewport */
   height: 100vh;
@@ -23,6 +23,7 @@ body {
 }
 
 .card {
+  flex: 1 5 400px;
   padding: 10px;
   width: 250px;
   text-align: center;
@@ -38,4 +39,9 @@ body {
 
 .card img {
   width: 100%;
+}
+@media screen and (max-width:700px){
+  card{
+    
+  }
 }

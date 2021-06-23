@@ -21,6 +21,7 @@ header {
 nav {
   display: flex;
   background-color: #d8a47f;
+  justify-content: flex-end;
 }
 
 nav a {
@@ -50,6 +51,7 @@ footer {
 
 .product-slideshow {
   display: flex;
+  align-items: center;
 }
 
 .product-image {
@@ -61,6 +63,9 @@ footer {
   flex: 0 0 60%;
 }
 
+.product-details h2{
+  text-align:center;
+}
 @media screen and (max-width: 768px) {
   main,
   nav,
@@ -75,5 +80,24 @@ footer {
 
   .product-details {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  main,
+  nav,
+  .product {
+    flex-direction: column;
+  }
+
+  .product-slideshow button {
+    /* Removes the slideshow buttons from the document flow */
+    display: none;
+  }
+
+  .product-details {
+    margin-left: 0;
+  }
+  img{
+    display:none;
   }
 }
