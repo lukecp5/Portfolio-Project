@@ -10,6 +10,9 @@ body {
 main {
   display: flex;
   margin-top: 2%;
+  flex-wrap: wrap;
+  max-width:80%;
+  margin: 2% auto 0px;
 }
 
 .main-header {
@@ -21,7 +24,7 @@ main {
 }
 
 .card {
-  flex: 1 0 0;
+  flex: 1;
   padding: 10px;
   text-align: center;
   border-style: solid;

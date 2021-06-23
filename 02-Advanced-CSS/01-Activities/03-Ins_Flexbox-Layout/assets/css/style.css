@@ -18,7 +18,7 @@ main {
 .main-header {
   display: flex;
   /* Defines how to distribute the empty space between child elements */
-  justify-content: space-between;
+  justify-content:space-between;
   padding: 60px;
   background: #13293d;
   color: #fff;

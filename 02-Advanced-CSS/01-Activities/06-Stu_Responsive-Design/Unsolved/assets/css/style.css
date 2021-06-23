@@ -18,6 +18,8 @@ header {
 What happens when we set the display property to flex? 
 TODO: Write your answer here 
 */
+/* The display:flex property allows the navigation buttons to occupy the entirety of their parent container
+This also allows the flex direction to change when the screen size drops below 768px */
 nav {
   display: flex;
   background-color: #d8a47f;
@@ -25,15 +27,20 @@ nav {
 
 nav a {
   color: #13293d;
-  padding: 14px 20px;
-  text-decoration: none;
+  padding: 12px 10px 20px;
+  text-decoration:none;
   text-align: center;
+}
+nav a:hover{
+  font-weight:600;
+  border:1px blue solid;
 }
 
 /* 
 What is the flex-wrap property? 
 TODO: Write your answer here 
 */
+/* The flex-wrap:wrap property tells the items that if they can't fit inside the viewport, they should move down to the next line  */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +65,8 @@ footer {
 What does the justify-content property do? 
 TODO: Write your answer here 
 */
+
+/* justify-content:center tells the items in the product flexbox to center themselves inside their parent container */
 .products {
   flex: 4;
   background-color: #fff;
@@ -71,6 +80,11 @@ TODO: Write your answer here
 What is the flex property a shorthand property for?
 What is it doing here? 
 TODO: Write your answer here 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+the flex: shorthand property stands for the following values: 
+flex: [flex-grow] [flex-shrink] [flex-basis]
+this is the same as flex-grow:0, flex-shrink:0, flex-basis:400px;
 */
 .card {
   border-style: solid;
@@ -78,6 +92,9 @@ TODO: Write your answer here
   border-radius: 10px;
   padding: 10px;
   flex: 0 0 400px;
+}
+.card:hover{
+  border: #13293d 4px solid;
 }
 
 .card header {
@@ -97,9 +114,14 @@ What does the flex-direction property define?
 What is it doing here? 
 TODO: Write your answer here 
 */
+
+/*Here, the flex direction rearranges the navigation links to go from top to bottom instead of left to right, when the screen size is smaller than 768px */
 @media screen and (max-width: 768px) {
   main,
   nav {
     flex-direction: column;
+  }
+  nav a:hover{
+    text-decoration: line-through;
   }
 }
