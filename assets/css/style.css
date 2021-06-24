@@ -350,8 +350,8 @@ div.card {
     width: -webkit-fill-available;
     padding-left: 5vw;
     padding-top: 0.3vw;
-    max-width: auto;
-    max-height: auto;
+    /* max-width: auto;
+    max-height: auto; */
     flex: 1 1 auto;
     /* min-height: max-content; */
   }
