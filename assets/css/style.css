@@ -4,17 +4,19 @@
   font-weight: 300;
   padding: 0px;
   margin: 0px;
+  /* font-size: 16px; */
 }
 i {
   color: #fff8f0ff;
   font-size: 4vw;
 }
-:root{
---blue: #064789ff;
---light-blue: #accde4;
---red: #471323ff;
---orange: #f6511dff;
---green: #3a5a40ff;
+:root {
+  --blue: #064789ff;
+  --light-blue: rgb(179, 179, 179);
+  --red: #471323ff;
+  --orange: #f6511dff;
+  --green: #3a5a40ff;
+  --card: rgb(255, 122, 162);
 }
 body {
   background-color: var(--light-blue);
@@ -29,47 +31,46 @@ header {
   display: block;
   color: rgb(21, 202, 187);
   background-color: var(--blue);
-  margin-bottom:0;
+  margin-bottom: 0;
   padding-bottom: 5vw;
   border-bottom: var(--red) 1.4vh solid;
 }
 /* Start of Navbar styling */
-  .topnav {
-    background-color: var(--red);
-    overflow: hidden;
-  }
-  .topnav li.navItem{
-    list-style:none;
-    display: block;
-    float: left;
-  }
-  li.icon{
-    list-style: none;
-  }
-  i.fa-bars{
-    list-style:none;
-    display: none;
-  }
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 8px 10px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .topnav li.navItem a:hover{
-    background-color: #ddd;
-    color: black;
-  }
-  a.icon {
-    display: none;
-  }
+.topnav {
+  background-color: var(--red);
+  overflow: hidden;
+}
+.topnav li.navItem {
+  list-style: none;
+  display: block;
+  float: left;
+}
+li.icon {
+  list-style: none;
+}
+i.fa-bars {
+  list-style: none;
+  display: none;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav li.navItem a:hover {
+  background-color: #ddd;
+  color: black;
+}
+a.icon {
+  display: none;
+}
 /*~~~~~~~~~~~~~~End of Navbar Styling~~~~~~~~~~~~~~*/
 
-
-/* Image, Name, and Description Default Styling */  
+/* Image, Name, and Description Default Styling */
 
 img.profile-pic {
   display: block;
@@ -87,7 +88,7 @@ img.profile-pic {
 }
 div.info-container {
   min-width: 96vw;
-  max-height:auto;
+  max-height: auto;
   width: -moz-max-content;
   width: max-content;
   padding-right: 0.3vw;
@@ -117,14 +118,11 @@ div.info-container {
   /* padding: 1vh 0 0 0 !important; */
   margin: 0 auto;
 }
-.social-list li{
-  max-height: auto;
-}
 #profile-content .social a {
   background: #2394a8;
   display: inline-block;
   width: 36px;
-  max-height: auto;
+  height: auto;
   display: inline-block;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -151,13 +149,13 @@ div.info-container {
   font-size: 4vw;
   margin: 0px auto;
   padding-left: 2%;
-  float:left;
+  float: left;
   flex: 1 1 50%;
   overflow: hidden;
   word-wrap: normal;
 }
 
-/* End of Image, Name, and Description Default Styling */  
+/* End of Image, Name, and Description Default Styling */
 
 /* Styling for Social Items*/
 .social-list {
@@ -174,29 +172,62 @@ div.info-container {
   align-content: flex-end;
 }
 .social-list li {
-  padding: 0;
+  padding: 0 4% 0 4%;
   font-size: xx-large;
   flex: 2 1 10%;
   max-width: auto;
 }
 
 /* Styling for the main content of the page */
-#about{
+#about {
   padding: 0 2vw 0 2vw;
-  margin:0 auto;
+  margin: 0 auto;
 }
-#about h5{
+/* #about h5 {
   font-size: 8vw;
-  text-align:center;
+  display: block;
+  text-align: center;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~ Styling For Porfolio section ~~~~~~~~~~~~~~~~~~~~*/
+#portfolio {
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.card {
+  background-color: var(--light-blue);
+  flex: 1 1 auto;
+  box-shadow:
+  5px  5px 10px rgb(43, 44, 46, .4),
+  15px 15px 25px rgba(166,173,201,0.2);
+  margin: 0 5% 3% 5%;
+  padding: 1%;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  padding: 2px 16px;
+  position: relative;
+  float:none;
+}
+.container p{
+  position:relative;
+  bottom:5%;
+}
+.container h5{
+  position:relative;
+  bottom:20%;
+}
 /* ~~~~~~~~~~MEDIA QUERIES~~~~~~~~~~*/
 
 /*~~~~Iphone X and smaller*/
 
 @media (min-width: 300px) {
-
-
   div.info-container {
     flex-direction: column;
     max-height: min-content;
@@ -237,31 +268,35 @@ div.info-container {
       sans-serif;
     font-weight: 500;
     font-size: 5vw;
-    min-height:fit-content;
+    min-height: fit-content;
   }
   .social {
     min-width: max-content;
   }
   .social-list {
     flex-grow: 1;
-    padding-top:0;
-    height:min-content;
+    padding-top: 0;
+    height: min-content;
   }
-  i{
+  i {
     font-size: 5vh;
   }
-
 }
 /*Conditional Styling for "responsive" nav menu */
 @media screen and (max-width: 576px) {
-  .topnav li.navItem {display: none;}
-  a#icon, i.fa-bars {
+  .topnav li.navItem {
+    display: none;
+  }
+  a#icon,
+  i.fa-bars {
     float: right;
     display: block;
   }
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
-    display:block;
+    display: block;
     position: absolute;
     right: 0;
     top: 0;
@@ -278,17 +313,17 @@ div.info-container {
   header {
     min-width: 96vw;
     display: block;
-    padding:1vh;
+    padding: 1vh;
   }
-  div.info-container{
+  div.info-container {
     max-height: min-content;
-    padding-top:1%;
+    padding-top: 1%;
     flex-direction: row;
     align-items: center;
   }
   #img-wrapper,
   .profile-content {
-    margin:0 auto; 
+    margin: 0 auto;
     align-self: center;
     padding: 0%;
   }
@@ -298,12 +333,12 @@ div.info-container {
     max-width: min-content;
     max-height: 20vh;
     margin: 0;
-    padding:0px;
+    padding: 0px;
   }
   #profile-content {
     max-height: auto;
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     margin: 0px;
@@ -312,7 +347,7 @@ div.info-container {
   #name,
   #desc,
   .social-list {
-    width:-webkit-fill-available;
+    width: -webkit-fill-available;
     padding-left: 5vw;
     padding-top: 0.3vw;
     max-width: auto;
@@ -323,12 +358,12 @@ div.info-container {
   #name {
     padding-top: 0;
     font-size: 10vw;
-    font-family:  Ubuntu,-apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
+    font-family: Ubuntu, -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 400;
   }
   #desc {
-    font-family:  Ubuntu, -apple-system, Cantarell, "Open Sans", "Helvetica Neue",
+    font-family: Ubuntu, -apple-system, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     font-weight: 300;
     font-size: 4vh;
@@ -338,12 +373,13 @@ div.info-container {
   #desc {
     margin: 0px;
   }
-  .social-list{
+  .social-list {
     justify-content: center;
     font-size: 2%;
-    width:-webkit-fill-available;
+    width: -webkit-fill-available;
   }
-  #name,#desc {
+  #name,
+  #desc {
     word-wrap: inherit;
     text-align: center;
     width: max-content;
@@ -354,17 +390,17 @@ div.info-container {
     text-align: center;
     margin: 0px auto;
   }
-  .list-inline-item{
+  .list-inline-item {
     text-align: center;
   }
-  i{
+  i {
     font-size: 5vw;
   }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  div.info-container{
+  div.info-container {
     flex-direction: row;
   }
 }
@@ -373,10 +409,10 @@ div.info-container {
 @media (min-width: 992px) {
 }
 
-/* Extra large devices (large desktops, 1200px and up)*/ 
+/* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 }
 
 /* Xtra Small Devices*/
 @media only screen and (max-width: 480px) {
-} 
+}
