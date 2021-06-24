@@ -18,9 +18,12 @@ i {
   --green: #3a5a40ff;
   --card: rgb(255, 122, 162);
 }
+html{
+  font-size: 2.4vw;
+}
 body {
   background-color: var(--light-blue);
-  font-size: 16px;
+  /* font-size: 16px; */
   color: #434343;
   margin: 0;
   padding: 0;
@@ -59,7 +62,7 @@ i.fa-bars {
   text-align: center;
   padding: 8px 10px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1rem;
 }
 .topnav li.navItem a:hover {
   background-color: #ddd;
@@ -136,7 +139,8 @@ div.info-container {
 }
 #name {
   color: var(--red);
-  font-size: 6vw;
+  font-size: 4rem;
+  font-weight: 600;
   margin-bottom: auto;
   margin-top: auto;
   padding: 0px;
@@ -146,7 +150,8 @@ div.info-container {
 
 #desc {
   color: var(--red);
-  font-size: 4vw;
+  font-size: 2rem;
+  font-weight:200;
   margin: 0px auto;
   padding-left: 2%;
   float: left;
@@ -182,9 +187,12 @@ div.info-container {
 #about {
   padding: 0 2vw 0 2vw;
   margin: 0 auto;
+  color:var(--red);
 }
 #about h4 {
-  font-size: 2.6rem;
+  font-size: 1.4rem;
+  font-weight:400;
+  color:var(--red);
   display: block;
   text-align: center;
 }
@@ -195,10 +203,20 @@ div.info-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  color:var(--red);
+}
+#portfolio h4{
+  font-size: 1.4rem;
+  font-weight:400;
+  text-align: center;
+  display: block;
+  width:-webkit-fill-available;
+  margin-bottom: 1rem;
+  color:var(--red);
 }
 div.card {
   background-color: var(--light-blue);
-  flex: 1 1 auto;
+  flex: 1 1 30%;
   box-shadow:
   5px  5px 10px rgb(43, 44, 46, .4),
   15px 15px 25px rgba(166,173,201,0.2);
@@ -218,11 +236,12 @@ div.card {
 .container p{
   position:relative;
   bottom:5%;
-  font-size: 1.6rem;
+  font-size: 1rem;
+  font-weight: 200;
   text-align: center;
 }
 .container h5{
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-align: center;
   font-weight: 400;
   position:relative;
@@ -263,7 +282,7 @@ div.card {
     padding: 0%;
     padding-top: 1vh;
     min-width: max-content;
-    font-size: 4.6rem;
+    /* font-size: 4.6rem; */
     font-family: Ubuntu, -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
@@ -272,7 +291,7 @@ div.card {
     font-family: Ubuntu, -apple-system,  Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     font-weight: 500;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     min-height: -moz-fit-content;
     min-height: fit-content;
   }
@@ -364,7 +383,7 @@ div.card {
   }
   #name {
     padding-top: 0;
-    font-size: 10vw;
+    /* font-size: 10vw; */
     font-family: Ubuntu, -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 400;
@@ -373,7 +392,7 @@ div.card {
     font-family: Ubuntu, -apple-system, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
     font-weight: 300;
-    font-size: 4vh;
+    /* font-size: 4vh; */
     max-width: fit-content;
     max-width: -moz-fit-content;
   }
