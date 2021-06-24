@@ -333,7 +333,7 @@ div.card {
     align-self: center;
     padding: 0%;
   }
-  img.profile-pic {
+  #img-wrapper img.profile-pic {
     flex: 3 1 auto;
     display: inline;
     max-width: min-content;
