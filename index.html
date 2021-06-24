@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <title>Luke Poirrier - Frontend Web Developer</title>
+    
+  </head>
+  <body>
+    <header class="header">
+      <nav class="topnav" id="myTopnav">
+        <ul>
+          <li class="navItem"><a href=".header" alt="Link to top">Home</a></li>
+          <li class="navItem"><a href="#about" alt="Link to top">About</a></li>
+          <li class="navItem"><a href="#portfolio" alt="Link to top">Portfolio</a></li>
+          <li class="icon"><a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a></li>
+        </ul>
+      </nav>
+      <div class="info-container">
+        <div id="img-wrapper">
+          <img class="profile-pic" src="assets/images/profilepic.png" />
+        </div>
+        <div id="profile-content">
+          <h1 id="name">Luke Poirrier</h1>
+          <h2 id="desc">Frontend Web Developer</h2>
+          <ul class="social-list">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/luke-poirrier/"
+                ><i class="bi bi-linkedin wood" height="4vh"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/lukecp5"
+                ><i class="bi bi-github"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://stackoverflow.com/users/16159639/luke-poirrier"><i class="bi bi-stack wood"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <h5>About Me</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta
+          dolorem debitis vel possimus, voluptatum exercitationem sunt,
+          laudantium, incidunt consequuntur assumenda quasi omnis ullam maiores
+          nam veniam illum similique eos.
+        </p>
+      </section>
+    </main>
+    <!-- Javascript for nav -->
+    <script type="text/javascript">
+      function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }</script>
+  </body>
+</html>
