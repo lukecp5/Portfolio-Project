@@ -4,43 +4,38 @@
   font-weight: 300;
   padding: 0px;
   margin: 0px;
-  /* --cardinal: #ad343eff;
---light-slate-gray: #778492ff;
---charcoal: #49515aff;
---azure-x-11-web-color: #f2fdffff;
---burlywood: #dab785ff; */
 }
 i {
   color: #fff8f0ff;
+  font-size: 4vw;
 }
-/*~~~~~~~~~~~~~~~~~~~~~ Start of Color Pallette ~~~~~~~~~~~~~~~~~~~~~
---tomato: #CC1F00;
---rifle-green: #51513dff;
---yale-blue: #064789ff;
---floral-white: #fff8f0ff;
---sage: #d3ca9cff;
-chocolate: #1B170D
-~~~~~~~~~~~~~~~~~~~~~ End of Color Pallette ~~~~~~~~~~~~~~~~~~~~~*/
+:root{
+--blue: #064789ff;
+--light-blue: #accde4;
+--red: #471323ff;
+--orange: #f6511dff;
+--green: #3a5a40ff;
+}
 body {
-  background-color: blue;
+  background-color: var(--light-blue);
   font-size: 16px;
   color: #434343;
-  background: rgb(218, 227, 231);
   margin: 0;
   padding: 0;
 }
 header {
   height: -webkit-fill-available;
-  width: 100vw;
+  width: auto;
   display: block;
   color: rgb(21, 202, 187);
-  background-color: #064789;
-  margin-bottom:2vh;
-  padding-bottom: 2vh;
+  background-color: var(--blue);
+  margin-bottom:0;
+  padding-bottom: 5vw;
+  border-bottom: var(--red) 1.4vh solid;
 }
 /* Start of Navbar styling */
   .topnav {
-    background-color: #333;
+    background-color: var(--red);
     overflow: hidden;
   }
   .topnav li.navItem{
@@ -71,19 +66,20 @@ header {
   a.icon {
     display: none;
   }
-  /*~~~~~~~~~~~~~~End of Navbar Styling~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~End of Navbar Styling~~~~~~~~~~~~~~*/
+
+
 /* Image, Name, and Description Default Styling */  
 
 img.profile-pic {
   display: block;
   max-width: auto;
-  max-height: 25vh;
-
+  max-height: 35vh;
   width: auto;
   height: auto;
   border-radius: 50%;
   padding: 2%;
-  flex: 1 1 40vw;
+  flex: 1 1 0;
   /*     
     object-fit: cover;
     margin: 0 0; 
@@ -91,6 +87,7 @@ img.profile-pic {
 }
 div.info-container {
   min-width: 96vw;
+  max-height:auto;
   width: -moz-max-content;
   width: max-content;
   padding-right: 0.3vw;
@@ -109,22 +106,25 @@ div.info-container {
   max-height: 60vh;
   margin: auto 0;
 }
-profile-content {
+#profile-content {
   /* width:100vw; */
   width: -moz-max-content;
-  width: max-content;
-  flex: 1 1 30vw;
-  display: inline-block;
-  justify-content: center;
+  width: fit-content;
+  flex: 1 1 0;
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
   /* padding: 1vh 0 0 0 !important; */
   margin: 0 auto;
 }
-.profile-content .social a {
+.social-list li{
+  max-height: auto;
+}
+#profile-content .social a {
   background: #2394a8;
   display: inline-block;
   width: 36px;
-  height: 36px;
+  max-height: auto;
   display: inline-block;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -134,25 +134,21 @@ profile-content {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  color: rgb(11, 165, 185);
   text-align: center;
 }
 #name {
-  color: #1B170D;
+  color: var(--red);
   font-size: 6vw;
   margin-bottom: auto;
   margin-top: auto;
-  padding: 2%;
-  display: block;
-  width: fit-content;
-  float:left;
-  flex: 1 1 48%;
+  padding: 0px;
+  display: inline-block;
+  flex: 1 1 40%;
 }
 
 #desc {
-  color: #1B170D;
+  color: var(--red);
   font-size: 4vw;
-  text-align: center;
   margin: 0px auto;
   padding-left: 2%;
   float:left;
@@ -168,9 +164,9 @@ profile-content {
   color: #fff8f0ff;
   list-style: none;
   float: left;
-  padding: 0;
-  margin-top: 2%;
-  padding: 2% 2% 0 2%;
+  padding: 0px;
+  margin-top: 0px;
+  padding: 0px;
   display: flex;
   font-size: 1.2rem;
   justify-content: space-around;
@@ -178,17 +174,16 @@ profile-content {
   align-content: flex-end;
 }
 .social-list li {
-  padding: 0 4% 0 4%;
+  padding: 0;
   font-size: xx-large;
   flex: 2 1 10%;
-  min-width: 20vw;
+  max-width: auto;
 }
 
 /* Styling for the main content of the page */
 #about{
-  padding:4%;
+  padding: 0 2vw 0 2vw;
   margin:0 auto;
-  text-justify: newspaper;
 }
 #about h5{
   font-size: 8vw;
@@ -199,12 +194,8 @@ profile-content {
 
 /*~~~~Iphone X and smaller*/
 
-@media (max-width: 576px) {
-  .topnav li.navItem {display: none;}
-  a#icon, i.fa-bars {
-    float: right;
-    display: block;
-  }
+@media (min-width: 300px) {
+
 
   div.info-container {
     flex-direction: column;
@@ -222,15 +213,14 @@ profile-content {
     flex-direction: column;
     text-align: center;
     margin: 0px;
-    min-width: 100%;
   }
   #name,
   #desc,
   .social-list {
     padding-top: 0.5vw;
-    max-width: 44vw;
+    max-width: auto;
     flex: 1 1 33%;
-    min-height: min-content;
+    min-height: auto;
   }
   #name {
     min-width: max-content;
@@ -247,17 +237,28 @@ profile-content {
       sans-serif;
     font-weight: 500;
     font-size: 5vw;
-    max-width: -webkit-fill-available;
+    min-height:fit-content;
   }
   .social {
     min-width: max-content;
   }
   .social-list {
     flex-grow: 1;
+    padding-top:0;
+    height:min-content;
+  }
+  i{
+    font-size: 5vh;
   }
 
 }
+/*Conditional Styling for "responsive" nav menu */
 @media screen and (max-width: 576px) {
+  .topnav li.navItem {display: none;}
+  a#icon, i.fa-bars {
+    float: right;
+    display: block;
+  }
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     display:block;
@@ -277,11 +278,32 @@ profile-content {
   header {
     min-width: 96vw;
     display: block;
+    padding:1vh;
+  }
+  div.info-container{
+    max-height: min-content;
+    padding-top:1%;
+    flex-direction: row;
+    align-items: center;
+  }
+  #img-wrapper,
+  .profile-content {
+    margin:0 auto; 
+    align-self: center;
+    padding: 0%;
+  }
+  img.profile-pic {
+    flex: 3 1 auto;
+    display: inline;
+    max-width: min-content;
+    max-height: 20vh;
+    margin: 0;
+    padding:0px;
   }
   #profile-content {
-    max-height: min-content;
+    max-height: auto;
     display: flex;
-    align-items: stretch;
+    align-items:center;
     flex-direction: column;
     text-align: center;
     margin: 0px;
@@ -290,39 +312,36 @@ profile-content {
   #name,
   #desc,
   .social-list {
-    padding-top: 0.5vw;
+    width:-webkit-fill-available;
+    padding-left: 5vw;
+    padding-top: 0.3vw;
     max-width: auto;
-    max-height: 5vh;
-    flex: 1 1 0;
+    max-height: auto;
+    flex: 1 1 auto;
     /* min-height: max-content; */
   }
   #name {
-    min-width: max-content;
-    padding: 0%;
-    padding-top: 4vh;
-    min-width: max-content;
-    font-size: 6vh;
-    font-family: -apple-system, Ubuntu, Roboto, BlinkMacSystemFont, "Segoe UI",
+    padding-top: 0;
+    font-size: 10vw;
+    font-family:  Ubuntu,-apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 400;
   }
   #desc {
-    font-family: -apple-system, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    font-family:  Ubuntu, -apple-system, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
-    font-weight: 500;
-    font-size: 3vh;
+    font-weight: 300;
+    font-size: 4vh;
     max-width: fit-content;
-  }
-  #img-wrapper,
-  .profile-content {
-    margin:0 auto; 
-    align-self: center;
-    padding: 2%;
   }
   h1#name,
   #desc {
     margin: 0px;
-    padding: 0px;
+  }
+  .social-list{
+    justify-content: center;
+    font-size: 2%;
+    width:-webkit-fill-available;
   }
   #name,#desc {
     word-wrap: inherit;
@@ -335,10 +354,19 @@ profile-content {
     text-align: center;
     margin: 0px auto;
   }
+  .list-inline-item{
+    text-align: center;
+  }
+  i{
+    font-size: 5vw;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  div.info-container{
+    flex-direction: row;
+  }
 }
 
 /* Large devices (desktops, 992px and up)*/
