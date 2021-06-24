@@ -91,7 +91,7 @@ img.profile-pic {
 }
 div.info-container {
   min-width: 96vw;
-  max-height: auto;
+  max-height: 24vw;
   width: -moz-max-content;
   width: max-content;
   padding-right: 0.3vw;
@@ -107,7 +107,7 @@ div.info-container {
   flex: 1 1 auto;
   display: inline;
   max-width: min-content;
-  max-height: 60vh;
+  max-height: 35vh;
   margin: auto 0;
 }
 #profile-content {
@@ -223,7 +223,11 @@ div.card {
   margin: 0 5% 3% 5%;
   padding: 1%;
 }
-
+div.card:hover{
+  box-shadow:
+  5px  5px 10px rgb(43, 44, 46, .7),
+  15px 15px 25px rgba(166,173,201,0.5);
+}
 .card img {
   display: block;
   margin: 0 auto;
