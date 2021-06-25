@@ -38,7 +38,7 @@ h3 {
 /* Added asterisk before every h3 heading */
 h3::before {
   font-family: Impact;
-  content: '\273A';
+  content: '';
   color: #772014;
   margin-right: 5px;
 }

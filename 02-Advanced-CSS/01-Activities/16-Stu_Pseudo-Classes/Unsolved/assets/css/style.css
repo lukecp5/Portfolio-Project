@@ -78,7 +78,9 @@ input, button {
   margin: 2% 0;
   padding: 1%;
 }
-
+ul{
+  list-style-type: none;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -86,7 +88,12 @@ footer {
   background-color: #13293d;
   color: #fff;
 }
-
+ul{
+  display: none;
+}
+h2:hover ~ ul{
+  display: block;
+}
 /* TODO: Add styles to display and hide the resource links */
 
 @media screen and (max-width: 768px) {
