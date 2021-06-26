@@ -1,12 +1,14 @@
+/*~~~~~~~~~~~~~~ Universal Selector Styling~~~~~~~~~~~~~~*/
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Ubuntu, -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   padding: 0px;
   margin: 0px;
   /* font-size: 1.8vw; */
   box-sizing: border-box;
 }
+/*~~~~~~~~~~~~~~~~~END of Universal Styles~~~~~~~~~~~~~~*/
 i {
   color: #fff8f0ff;
   font-size: 4vw;
@@ -20,7 +22,7 @@ i {
   --card: rgb(255, 122, 162);
 }
 html{
-  /* font-size: 2.4vw; */
+  font-size: 16px;
 }
 body {
   background-color: var(--light-blue);
@@ -39,7 +41,7 @@ header {
   padding-bottom: 5vw;
   border-bottom: var(--red) 1.4vh solid;
 }
-/* Start of Navbar styling */
+/*~~~~~~~~~~~~~~ Start of Navbar styling ~~~~~~~~~~~~~~*/
 .topnav {
   background-color: var(--red);
   overflow: hidden;
@@ -63,7 +65,7 @@ i.fa-bars {
   text-align: center;
   padding: 8px 10px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1em;
 }
 .topnav li.navItem a:hover {
   background-color: #ddd;
@@ -74,27 +76,14 @@ a.icon {
 }
 /*~~~~~~~~~~~~~~End of Navbar Styling~~~~~~~~~~~~~~*/
 
-/* Image, Name, and Description Default Styling */
 
-img.profile-pic {
-  display: block;
-  max-width: auto;
-  max-height: 35vh;
-  width: auto;
-  height: auto;
-  border-radius: 50%;
-  padding: 2%;
-  flex: 1 1 0;
-  /*     
-    object-fit: cover;
-    margin: 0 0; 
-    */
-}
+
+/* ~~~~~~~~Styling for elements in <header> ~~~~~~~~~~~~~*/
 div.info-container {
   min-width: 96vw;
-  max-height: 24vw;
-  width: -moz-max-content;
-  width: max-content;
+  max-height: 100%;
+  width: 100%;
+  font-size: 80%;
   padding-right: 0.3vw;
   padding-left: 0.3vw;
   margin-right: auto;
@@ -102,20 +91,35 @@ div.info-container {
   margin: 0 auto;
   display: flex;
   flex: 1 1 auto;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 #img-wrapper {
   flex: 1 1 auto;
   display: inline;
-  max-width: min-content;
-  max-height: 35vh;
+  max-width: 12rem;
+  max-height: auto;
   margin: auto 0;
+}
+img.profile-pic {
+  display: block;
+  max-width: auto;
+  max-height: auto;
+  width: 14rem;
+  height: auto;
+  border-radius: 50%;
+  padding: 2%;
+  flex: 1 1 auto;
+  /*     
+    object-fit: cover;
+    margin: 0 0; 
+    */
 }
 #profile-content {
   /* width:100vw; */
   width: -moz-max-content;
   width: max-content;
-  flex: 1 1 0;
+  flex: 1 1 auto;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -140,7 +144,7 @@ div.info-container {
 }
 #name {
   color: var(--red);
-  font-size: 4rem;
+  font-size: 4em;
   font-weight: 600;
   margin-bottom: auto;
   margin-top: auto;
@@ -151,7 +155,7 @@ div.info-container {
 
 #desc {
   color: var(--red);
-  font-size: 2rem;
+  font-size: 2em;
   font-weight:200;
   margin: 0px auto;
   padding-left: 2%;
@@ -161,9 +165,9 @@ div.info-container {
   word-wrap: normal;
 }
 
-/* End of Image, Name, and Description Default Styling */
+/*~~~~~~~~~~~~~~ End of <header> Styling ~~~~~~~~~~~~~~*/
 
-/* Styling for Social-Media Links(GitHub, Linkedin, StackOverflow)*/
+/*~~~~~~~~~~~~~~~~~Social Icon Styling~~~~~~~~~~~~~~~~~*/
 .social-list {
   color: #fff8f0ff;
   list-style: none;
@@ -173,7 +177,6 @@ div.info-container {
   padding: 0px;
   display: flex;
   font-size: 1.2rem;
-  justify-content: space-around;
   flex-flow: row;
   align-content: flex-end;
 }
@@ -184,19 +187,24 @@ div.info-container {
   max-width: auto;
 }
 
-/* Styling for the about section of the page */
+/*~~~~~~~~~~~~ Styling for the about section ~~~~~~~~~~~~*/
 #about {
-  padding: 0 2vw 0 2vw;
-  margin: 0 auto;
-  color:var(--red);
-  max-width:75%;
+  font-size: 100%;
+  margin: 1em .1em 1em .1em;
+  display: block;
+  max-width: 100%;  color:var(--red);
 }
 #about h4 {
-  font-size: 1.4rem;
+  font-size: 3em;
   font-weight:400;
   color:var(--red);
   display: block;
   text-align: center;
+}
+#about p{
+  font-size: 1.6rem;
+  /* margin-block: .1em; */
+  line-height: 2.4rem;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~ Styling For Porfolio section ~~~~~~~~~~~~~~~~~~~~*/
@@ -206,15 +214,19 @@ div.info-container {
   flex-direction: row;
   flex-wrap: wrap;
   color:var(--red);
+  font-size: 12px;
 }
 #portfolio h4{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight:400;
   text-align: center;
   display: block;
   width:-webkit-fill-available;
-  margin-bottom: 1rem;
+  margin-bottom: 2em;
   color:var(--red);
+}
+#portfolio p{
+  font-size: 1em;
 }
 div.card {
   background-color: var(--light-blue);
@@ -222,7 +234,7 @@ div.card {
   box-shadow:
   5px  5px 10px rgb(43, 44, 46, .4),
   15px 15px 25px rgba(166,173,201,0.2);
-  margin: 0 5% 3% 5%;
+  margin: 0 .4em 3% .4em;
   padding: 1%;
 }
 #portfolio > div:nth-child(2){
@@ -261,10 +273,11 @@ div.card:hover{
 
 /*~~~~Iphone X and smaller*/
 
-@media (min-width: 300px) {
+@media (max-width: 380px){
   div.info-container {
+    font-size: 100%;
     flex-direction: column;
-    max-height: min-content;
+    height: 100vh;
     min-width: -webkit-fill-available;
     display: flex;
     align-items: center;
@@ -278,6 +291,7 @@ div.card:hover{
     flex-direction: column;
     text-align: center;
     margin: 0px;
+    flex: 8 1 auto;
   }
   #name,
   #desc,
@@ -287,26 +301,18 @@ div.card:hover{
     flex: 1 1 33%;
     min-height: auto;
   }
-  #name {
+  .info-container h1#name{
     min-width: max-content;
     padding: 0%;
     padding-top: 1vh;
-    min-width: max-content;
-    /* font-size: 4.6rem; */
-    font-family: Ubuntu, -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: 600;
+    font-size: 3em;
+    /* font-weight: 600; */
   }
   #desc {
-    font-family: Ubuntu, -apple-system,  Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    font-weight: 500;
-    /* font-size: 2rem; */
-    min-height: -moz-fit-content;
-    min-height: fit-content;
+    font-size: 1.5em;
+    /* font-weight: 500; */
   }
   .social {
-    min-width: max-content;
   }
   .social-list {
     flex-grow: 1;
@@ -317,6 +323,25 @@ div.card:hover{
     font-size: 5vh;
   }
 }
+
+/* Xtra Small Devices*/
+@media only screen and (max-width: 480px) {
+img.profile-pic{
+  max-width: 8em;
+}
+#img-wrapper{
+  max-width: auto;
+  margin: 0 auto;
+}
+div.info-container{
+flex-direction:column;
+}
+/* #name{
+  font-size: 3.6em;
+} */
+}
+
+
 /*Conditional Styling for "responsive" nav menu */
 @media screen and (max-width: 576px) {
   .topnav li.navItem {
@@ -342,109 +367,124 @@ div.card:hover{
     display: block;
     text-align: left;
   }
+  #name{
+    /* font-size: 3em; */
+  }
+  img.profile-pic{
+    max-width: 10rem;
+  }
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  header {
-    min-width: 96vw;
-    display: block;
-    padding: 1vh;
-  }
-  div.info-container {
-    max-height: min-content;
-    padding-top: 1%;
-    flex-direction: row;
-    align-items: center;
-  }
-  #img-wrapper,
-  .profile-content {
-    margin: 0 auto;
-    align-self: center;
-    padding: 0%;
-  }
-  #img-wrapper img.profile-pic {
-    flex: 3 1 auto;
-    display: inline;
-    max-width: min-content;
-    max-height: inherit;
-    margin: 0;
-    padding: 0px;
-    padding-bottom: 4%;
-  }
-  #profile-content {
-    max-height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 0px;
-    /* min-width: max-content; */
-  }
-  #name,
-  #desc,
-  .social-list {
-    width: -webkit-fill-available;
-    padding-left: 5vw;
-    padding-top: 0.3vw;
-    /* max-width: auto;
-    max-height: auto; */
-    flex: 1 1 auto;
-    /* min-height: max-content; */
-  }
-  #name {
-    padding-top: 0;
-    /* font-size: 10vw; */
-    font-family: Ubuntu, -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: 400;
-  }
-  #desc {
-    font-family: Ubuntu, -apple-system, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    font-weight: 300;
-    /* font-size: 4vh; */
-    max-width: fit-content;
-    max-width: -moz-fit-content;
-  }
-  h1#name,
-  #desc {
-    margin: 0px;
-  }
-  .social-list {
-    justify-content: center;
-    font-size: 2%;
-    width: -webkit-fill-available;
-  }
-  #name,
-  #desc {
-    word-wrap: inherit;
-    text-align: center;
-    width: max-content;
-  }
-  main h4 {
-    display: block;
-    max-width: 84vw;
-    text-align: center;
-    margin: 0px auto;
-  }
-  .list-inline-item {
-    text-align: center;
-  }
-  i {
-    font-size: 5vw;
-  }
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-  div.info-container {
-    flex-direction: row;
-  }
+@media screen and (max-width: 768px) and (min-width:577px) {
+    header {
+        min-width: 96vw;
+        display: block;
+        padding: 1vh;
+      }
+      div.info-container {
+        max-height: min-content;
+        padding-top: 1%;
+        flex-direction: row;
+        align-items: center;
+      }
+      #img-wrapper,
+      .profile-content {
+        margin: 0px;
+        align-self: center;
+        padding: 0%;
+        padding-left:0;
+      }
+      img.profile-pic {
+        flex: 3 1 auto;
+        display: inline;
+        max-width: 16em;
+        margin: 0;
+        padding: 0px;
+        padding-bottom: 4%;
+        padding-left:1em;
+      }
+      #profile-content {
+        max-height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+        max-width: 60vw;
+        /* min-width: max-content; */
+      }
+      #name,
+      #desc,
+      .social-list {
+        width: -webkit-fill-available;
+        /* padding-left: 5vw; */
+        padding-top: 0.3vw;
+        /* max-width: auto;
+        max-height: auto; */
+        flex: 1 1 auto;
+        /* min-height: max-content; */
+      }
+      #name {
+        padding-top: 0;
+        /* font-size: 10vw; */
+        font-family: Ubuntu, -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 400;
+      }
+      #desc {
+        font-family: Ubuntu, -apple-system, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: 300;
+        /* font-size: 4vh; */
+        max-width: fit-content;
+        max-width: -moz-fit-content;
+      }
+      h1#name,
+      #desc {
+        margin: 0px;
+      }
+      .social-list {
+        justify-content: center;
+        font-size: 2%;
+        max-width:40vw;
+        justify-self: flex-end;
+            }
+      #name,
+      #desc {
+        word-wrap: inherit;
+        text-align: center;
+        width: max-content;
+      }
+      main h4 {
+        display: block;
+        max-width: 84vw;
+        text-align: center;
+        margin: 0px auto;
+      }
+      li.list-inline-item {
+        text-align: center;
+        padding: 0px;
+      }
+      i {
+        font-size: 5vw;
+      }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
+  div.info-container{
+  max-height: min-content;
+  padding-top: 1%;
+  flex-direction: column;
+  align-items: center;
+}
+  }
+  
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -459,6 +499,3 @@ div.card:hover{
   }
 }
 
-/* Xtra Small Devices*/
-@media only screen and (max-width: 480px) {
-}
