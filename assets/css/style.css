@@ -4,7 +4,8 @@
   font-weight: 300;
   padding: 0px;
   margin: 0px;
-  font-size: 1.8vw;
+  /* font-size: 1.8vw; */
+  box-sizing: border-box;
 }
 i {
   color: #fff8f0ff;
@@ -162,7 +163,7 @@ div.info-container {
 
 /* End of Image, Name, and Description Default Styling */
 
-/* Styling for Social Items*/
+/* Styling for Social-Media Links(GitHub, Linkedin, StackOverflow)*/
 .social-list {
   color: #fff8f0ff;
   list-style: none;
@@ -183,7 +184,7 @@ div.info-container {
   max-width: auto;
 }
 
-/* Styling for the main content of the page */
+/* Styling for the about section of the page */
 #about {
   padding: 0 2vw 0 2vw;
   margin: 0 auto;
@@ -217,12 +218,15 @@ div.info-container {
 }
 div.card {
   background-color: var(--light-blue);
-  flex: 1 1 30%;
+  flex: 1 1 35%;
   box-shadow:
   5px  5px 10px rgb(43, 44, 46, .4),
   15px 15px 25px rgba(166,173,201,0.2);
   margin: 0 5% 3% 5%;
   padding: 1%;
+}
+#portfolio > div:nth-child(2){
+  flex: 1 1 100%;
 }
 div.card:hover{
   box-shadow:
@@ -232,6 +236,7 @@ div.card:hover{
 .card img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 .container {
   padding: 2px 16px;
