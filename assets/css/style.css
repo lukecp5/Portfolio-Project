@@ -30,6 +30,7 @@ body {
   color: #434343;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 header {
   height: -webkit-fill-available;
@@ -97,7 +98,7 @@ div.info-container {
 #img-wrapper {
   flex: 1 1 auto;
   display: inline;
-  max-width: 12rem;
+  /* max-width: 12rem; */
   max-height: auto;
   margin: auto 0;
 }
@@ -273,16 +274,16 @@ div.card:hover{
 
 /*~~~~Iphone X and smaller*/
 
-@media (max-width: 380px){
   div.info-container {
     font-size: 100%;
     flex-direction: column;
-    height: 100vh;
+    height: 92vh;
     min-width: -webkit-fill-available;
     display: flex;
     align-items: center;
     padding: 0px;
     margin: 0px auto;
+    border
   }
   #profile-content {
     max-height: min-content;
@@ -308,7 +309,6 @@ div.card:hover{
     font-size: 3em;
     /* font-weight: 600; */
   }
-  #desc {
     font-size: 1.5em;
     /* font-weight: 500; */
   }
@@ -367,16 +367,9 @@ flex-direction:column;
     display: block;
     text-align: left;
   }
-  #name{
-    /* font-size: 3em; */
-  }
   img.profile-pic{
     max-width: 10rem;
   }
-}
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -401,12 +394,13 @@ flex-direction:column;
       }
       img.profile-pic {
         flex: 3 1 auto;
-        display: inline;
+        display: block;
         max-width: 16em;
-        margin: 0;
+        margin: auto;
         padding: 0px;
         padding-bottom: 4%;
         padding-left:1em;
+        text-align: center;
       }
       #profile-content {
         max-height: auto;
@@ -468,7 +462,7 @@ flex-direction:column;
       }
       li.list-inline-item {
         text-align: center;
-        padding: 0px;
+        padding: 10px;
       }
       i {
         font-size: 5vw;
@@ -478,24 +472,52 @@ flex-direction:column;
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   div.info-container{
-  max-height: min-content;
+  max-height: 100vh;
   padding-top: 1%;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  font-size: 1.8em;
+}
+#img-wrapper{
+  margin: 0;
+}
+.social-list {
+  min-width: 100%;
 }
   }
   
-}
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  .img-wrapper img.profile-pic {
+  div#img-wrapper > img.profile-pic {
     flex: 3 1 auto;
     display: inline;
     max-width: auto;
-    max-height: 40vw;
+    max-height: 18em;
     margin: 0;
-    margin-left: 30%;
+    padding:0px;
+    align-self: center;
+    justify-self: center;
   }
+  #img-wrapper{
+    text-align: center;
+  }
+  div.info-container{
+    flex-direction: row;
+    height:18em;
+  }
+  .social-list{
+    flex: 1 1 auto;
+  }
+  #name,#desc{
+    flex-grow:0;
+  }
+  #profile-content{
+    height:100%; 
+  }
+  header{
+    padding-bottom: 1em;
+  }
+
 }
 
