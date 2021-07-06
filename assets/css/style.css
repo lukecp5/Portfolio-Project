@@ -235,11 +235,17 @@ h4 {
   text-align: center;
   display: block;
   width:-webkit-fill-available;
-  margin-bottom: .5em;
+  margin: .8em 0px;
   color:var(--red);
 }
+#portfolio h5{
+  font-size: 2em;
+  font-weight: 300;
+  margin: .4em 0px;
+}
 #portfolio p{
-  font-size: 1em;
+  font-size: 1.4em;
+  margin: .4em;
 }
 
 .card {
@@ -253,6 +259,11 @@ h4 {
 }
 #portfolio > section:nth-child(2){
   flex: 1 1 100%;
+}
+#portfolio a{
+  margin: 0 auto;
+  text-decoration: none;
+  color: var(--red);
 }
 .card:hover{
   box-shadow:
@@ -346,7 +357,7 @@ h4 {
   .contact-list{
     font-size: 2rem;
     list-style: none;
-    text-align: center;
+    text-align:start;
     margin-bottom: 4rem;
   }
   .contact-list li{
@@ -362,6 +373,22 @@ h4 {
   }
 /* Xtra Small Devices*/
 @media only screen and (max-width: 480px) {
+  #contact{
+    max-width:80vw;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contact-list{
+  font-size: 1.2rem;
+  list-style: none;
+  text-align:start;
+  margin-bottom: 4rem;
+}
+#portfolio{
+  font-size: 10px;
+}
 img.profile-pic{
   max-width: 8em;
 }
