@@ -1,0 +1,545 @@
+/*~~~~~~~~~~~~~~ Universal Selector Styling~~~~~~~~~~~~~~*/
+* {
+  font-family: Ubuntu, -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  padding: 0px;
+  margin: 0px;
+  /* font-size: 1.8vw; */
+  box-sizing: border-box;
+}
+/*~~~~~~~~~~~~~~~~~END of Universal Styles~~~~~~~~~~~~~~*/
+i {
+  color: #fff8f0ff;
+  font-size: 4vw;
+}
+:root {
+  --blue: #064789ff;
+  --light-blue: rgb(179, 179, 179);
+  --red: #471323ff;
+  --orange: #f6511dff;
+  --green: #3a5a40ff;
+  --card: rgb(255, 122, 162);
+}
+html{
+  font-size: 16px;
+}
+body {
+  background-color: var(--light-blue);
+  /* font-size: 16px; */
+  color: #434343;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+header {
+  height: -webkit-fill-available;
+  width: auto;
+  display: block;
+  color: rgb(21, 202, 187);
+  background-color: var(--blue);
+  margin-bottom: 0;
+  padding-bottom: 5vw;
+  border-bottom: var(--red) 1.4vh solid;
+}
+/*~~~~~~~~~~~~~~ Start of Navbar styling ~~~~~~~~~~~~~~*/
+.topnav {
+  background-color: var(--red);
+  overflow: hidden;
+}
+.topnav li.navItem {
+  list-style: none;
+  display: block;
+  float: left;
+}
+li.icon {
+  list-style: none;
+}
+i.fa-bars {
+  list-style: none;
+  display: none;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 1em;
+}
+.topnav li.navItem a:hover {
+  background-color: #ddd;
+  color: black;
+}
+a.icon {
+  display: none;
+}
+/*~~~~~~~~~~~~~~End of Navbar Styling~~~~~~~~~~~~~~*/
+
+
+
+/* ~~~~~~~~Styling for elements in <header> ~~~~~~~~~~~~~*/
+.main{
+  width: 60vw;
+}
+div.info-container {
+  min-width: 96vw;
+  max-height: 100%;
+  width: 100%;
+  font-size: 80%;
+  padding-right: 0.3vw;
+  padding-left: 0.3vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  align-items: center;
+}
+#img-wrapper {
+  flex: 1 1 auto;
+  display: inline;
+  /* max-width: 12rem; */
+  max-height: auto;
+  margin: auto 0;
+}
+img.profile-pic {
+  display: block;
+  max-width: auto;
+  max-height: auto;
+  width: 14rem;
+  height: auto;
+  border-radius: 50%;
+  padding: 2%;
+  flex: 1 1 auto;
+  /*     
+    object-fit: cover;
+    margin: 0 0; 
+    */
+}
+#profile-content {
+  /* width:100vw; */
+  width: -moz-max-content;
+  width: max-content;
+  flex: 1 1 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 1vh 0 0 0 !important; */
+  margin: 0 auto;
+}
+#profile-content .social a {
+  background: #2394a8;
+  display: inline-block;
+  width: 36px;
+  height: auto;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  text-align: center;
+}
+#name {
+  color: var(--red);
+  font-size: 4em;
+  font-weight: 600;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 0px;
+  display: inline-block;
+  flex: 1 1 40%;
+}
+
+#desc {
+  color: var(--red);
+  font-size: 2em;
+  font-weight:200;
+  margin: 0px auto;
+  padding-left: 2%;
+  float: left;
+  flex: 1 1 50%;
+  overflow: hidden;
+  word-wrap: normal;
+}
+
+/*~~~~~~~~~~~~~~ End of <header> Styling ~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~Social Icon Styling~~~~~~~~~~~~~~~~~*/
+.social-list {
+  color: #fff8f0ff;
+  list-style: none;
+  float: left;
+  padding: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  display: flex;
+  font-size: 1.2rem;
+  flex-flow: row;
+  align-content: flex-end;
+}
+.social-list li {
+  padding: 0 4% 0 4%;
+  font-size: xx-large;
+  flex: 2 1 10%;
+  max-width: auto;
+}
+
+/*~~~~~~~~~~~~ Styling for the about section ~~~~~~~~~~~~*/
+#about {
+  font-size: 100%;
+  margin: 3rem auto;
+  display: block;
+  width: 60vw;  
+  color:var(--red);
+}
+h4 {
+  font-size: 3em;
+  font-weight:400;
+  color:var(--red);
+  display: block;
+  text-align: center;
+  margin-bottom: .5em;
+  margin-top: .8rem;
+}
+#about p{
+  font-size: 1.2rem;
+  /* margin-block: .1em; */
+  line-height: 2rem;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~ Styling For Porfolio section ~~~~~~~~~~~~~~~~~~~~*/
+#portfolio {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color:var(--red);
+  font-size: 12px;
+  margin: 0 auto;
+}
+#portfolio h4{
+  font-size: 3rem;
+  font-weight:400;
+  text-align: center;
+  display: block;
+  width:-webkit-fill-available;
+  margin-bottom: .5em;
+  color:var(--red);
+}
+#portfolio p{
+  font-size: 1em;
+}
+
+.card {
+  background-color: var(--light-blue);
+  flex: 1 1 35%;
+  box-shadow:
+  5px  5px 10px rgb(43, 44, 46, .4),
+  15px 15px 25px rgba(166,173,201,0.2);
+  margin: 0 .4em 3% .4em;
+  padding: 1%;
+}
+#portfolio > section:nth-child(2){
+  flex: 1 1 100%;
+}
+.card:hover{
+  box-shadow:
+  5px  5px 10px rgb(43, 44, 46, .7),
+  15px 15px 25px rgba(166,173,201,0.5);
+}
+.card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.container {
+  padding: 2px 16px;
+  position: relative;
+  float:none;
+}
+.container p{
+  position:relative;
+  bottom:5%;
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+}
+.container h5{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+  position:relative;
+  bottom:20%;
+}
+/* ~~~~~~~~~~MEDIA QUERIES~~~~~~~~~~*/
+
+/*~~~~Iphone X and smaller*/
+
+  .info-container {
+    font-size: 100%;
+    flex-direction: column;
+    height: 92vh;
+    min-width: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  #profile-content {
+    max-height: min-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+    flex: 8 1 auto;
+  }
+  #name,
+  #desc,
+  .social-list {
+    padding-top: 0.5vw;
+    max-width: auto;
+    flex: 1 1 33%;
+    min-height: auto;
+  }
+  .info-container h1#name{
+    min-width: max-content;
+    padding: 0%;
+    padding-top: 1vh;
+    font-size: 3em;
+    font-weight: 600;
+
+    /* font-size: 1.5em; */
+    /* font-weight: 500; */
+  }
+  .social {
+  }
+  .social-list {
+    flex-grow: 1;
+    padding-top: 0;
+    height: min-content;
+  }
+  i {
+    font-size: 5vh;
+  }
+  form{
+      margin: 2rem auto;
+  }
+  .contact-form{
+      max-width:60vw;
+      margin: 0 auto;
+      font-size: 1rem;
+  }
+  input{
+      display:block;
+  }
+  textarea{
+      display: block;
+  }
+/* Xtra Small Devices*/
+@media only screen and (max-width: 480px) {
+img.profile-pic{
+  max-width: 8em;
+}
+#about p{
+    /* font-size: .7rem; */
+}
+#img-wrapper{
+  max-width: auto;
+  margin: 0 auto;
+}
+.info-container{
+flex-direction:column;
+}
+/* #name{
+  font-size: 3.6em;
+} */
+}
+
+
+/*Conditional Styling for "responsive" nav menu */
+@media screen and (max-width: 576px) {
+  .topnav li.navItem {
+    display: none;
+  }
+  a#icon,
+  i.fa-bars {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive li.navItem {
+    float: none;
+    clear: left;
+    display: block;
+    text-align: left;
+  }
+  img.profile-pic{
+    max-width: 10rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) and (min-width:577px) {
+    header {
+        min-width: 96vw;
+        display: block;
+        padding: 1vh;
+      }
+      .info-container {
+        max-height: min-content;
+        padding-top: 1%;
+        flex-direction: row;
+        align-items: center;
+      }
+      #img-wrapper,
+      .profile-content {
+        margin: 0px;
+        align-self: center;
+        padding: 0%;
+        padding-left:0;
+      }
+      img.profile-pic {
+        flex: 3 1 auto;
+        display: block;
+        max-width: 16em;
+        margin: auto;
+        padding: 0px;
+        padding-bottom: 4%;
+        padding-left:1em;
+        text-align: center;
+      }
+      #profile-content {
+        max-height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+        max-width: 60vw;
+        /* min-width: max-content; */
+      }
+      #name,
+      #desc,
+      .social-list {
+        width: -webkit-fill-available;
+        /* padding-left: 5vw; */
+        padding-top: 0.3vw;
+        /* max-width: auto;
+        max-height: auto; */
+        flex: 1 1 auto;
+        /* min-height: max-content; */
+      }
+      #name {
+        padding-top: 0;
+        /* font-size: 10vw; */
+        font-family: Ubuntu, -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI",
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-weight: 400;
+      }
+      #desc {
+        font-family: Ubuntu, -apple-system, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-weight: 300;
+        /* font-size: 4vh; */
+        max-width: fit-content;
+        max-width: -moz-fit-content;
+      }
+      h1#name,
+      #desc {
+        margin: 0px;
+      }
+      .social-list {
+        justify-content: center;
+        font-size: 2%;
+        max-width:40vw;
+        justify-self: flex-end;
+            }
+      #name,
+      #desc {
+        word-wrap: inherit;
+        text-align: center;
+        width: max-content;
+      }
+      main h4 {
+        display: block;
+        max-width: 84vw;
+        text-align: center;
+        margin: 0px auto;
+      }
+      li.list-inline-item {
+        text-align: center;
+        padding: 10px;
+      }
+      i {
+        font-size: 5vw;
+      }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .info-container{
+  max-height: 100vh;
+  padding-top: 1%;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.8em;
+}
+#img-wrapper{
+  margin: 0;
+}
+.social-list {
+  min-width: 100%;
+}
+  }
+  
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #img-wrapper > img.profile-pic {
+    flex: 3 1 auto;
+    display: inline;
+    max-width: auto;
+    max-height: 18em;
+    margin: 0;
+    padding:0px;
+    align-self: center;
+    justify-self: center;
+  }
+  #img-wrapper{
+    text-align: center;
+  }
+  .info-container{
+    flex-direction: row;
+    height:18em;
+  }
+  .social-list{
+    flex: 1 1 auto;
+  }
+  #name,#desc{
+    flex-grow:0;
+  }
+  #profile-content{
+    height:100%; 
+  }
+  header{
+    padding-bottom: 1em;
+  }
+
+}
+

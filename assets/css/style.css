@@ -80,6 +80,12 @@ a.icon {
 
 
 /* ~~~~~~~~Styling for elements in <header> ~~~~~~~~~~~~~*/
+<<<<<<< HEAD
+.main{
+  width: 60vw;
+}
+=======
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
 div.info-container {
   min-width: 96vw;
   max-height: 100%;
@@ -191,16 +197,32 @@ img.profile-pic {
 /*~~~~~~~~~~~~ Styling for the about section ~~~~~~~~~~~~*/
 #about {
   font-size: 100%;
+<<<<<<< HEAD
+  margin: 3rem auto;
+  display: block;
+  width: 60vw;  
+  color:var(--red);
+}
+h4 {
+=======
   margin: 1em .1em 1em .1em;
   display: block;
   max-width: 100%;  color:var(--red);
 }
 #about h4 {
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
   font-size: 3em;
   font-weight:400;
   color:var(--red);
   display: block;
   text-align: center;
+  margin-bottom: .5em;
+  margin-top: .8rem;
+}
+#about p{
+  font-size: 1.2rem;
+  /* margin-block: .1em; */
+  line-height: 2rem;
 }
 #about p{
   font-size: 1.6rem;
@@ -210,26 +232,42 @@ img.profile-pic {
 
 /*~~~~~~~~~~~~~~~~~~~~ Styling For Porfolio section ~~~~~~~~~~~~~~~~~~~~*/
 #portfolio {
-  width: -webkit-fill-available;
+  width: 80vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   color:var(--red);
   font-size: 12px;
+<<<<<<< HEAD
+  margin: 0 auto;
+}
+#portfolio h4{
+  font-size: 3rem;
+=======
 }
 #portfolio h4{
   font-size: 1.6rem;
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
   font-weight:400;
   text-align: center;
   display: block;
   width:-webkit-fill-available;
+<<<<<<< HEAD
+  margin-bottom: .5em;
+=======
   margin-bottom: 2em;
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
   color:var(--red);
 }
 #portfolio p{
   font-size: 1em;
 }
+<<<<<<< HEAD
+
+.card {
+=======
 div.card {
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
   background-color: var(--light-blue);
   flex: 1 1 35%;
   box-shadow:
@@ -238,10 +276,10 @@ div.card {
   margin: 0 .4em 3% .4em;
   padding: 1%;
 }
-#portfolio > div:nth-child(2){
+#portfolio > section:nth-child(2){
   flex: 1 1 100%;
 }
-div.card:hover{
+.card:hover{
   box-shadow:
   5px  5px 10px rgb(43, 44, 46, .7),
   15px 15px 25px rgba(166,173,201,0.5);
@@ -274,7 +312,11 @@ div.card:hover{
 
 /*~~~~Iphone X and smaller*/
 
+<<<<<<< HEAD
+  .info-container {
+=======
   div.info-container {
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
     font-size: 100%;
     flex-direction: column;
     height: 92vh;
@@ -307,9 +349,15 @@ div.card:hover{
     padding: 0%;
     padding-top: 1vh;
     font-size: 3em;
+<<<<<<< HEAD
+    font-weight: 600;
+
+    /* font-size: 1.5em; */
+=======
     /* font-weight: 600; */
   }
     font-size: 1.5em;
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
     /* font-weight: 500; */
   }
   .social {
@@ -322,8 +370,52 @@ div.card:hover{
   i {
     font-size: 5vh;
   }
+  form{
+      margin: 2rem auto;
+  }
+  .contact-form{
+      max-width:60vw;
+      margin: 0 auto;
+      font-size: 1rem;
+      text-align: center;
+  }
+  label{
+    /* float: left; */
+    margin: .2rem;
+  }
+  input{
+    display: block;
+      /* text-align: center; */
+      width: 65%;
+      margin: auto;
+  }
+  textarea{
+      display: block;
+      margin: .2rem;
+      width:100%;
+  }
+/* Xtra Small Devices*/
+@media only screen and (max-width: 480px) {
+img.profile-pic{
+  max-width: 8em;
+}
+#about p{
+    /* font-size: .7rem; */
+}
+#img-wrapper{
+  max-width: auto;
+  margin: 0 auto;
+}
+.info-container{
+flex-direction:column;
+}
+/* #name{
+  font-size: 3.6em;
+} */
 }
 
+<<<<<<< HEAD
+=======
 /* Xtra Small Devices*/
 @media only screen and (max-width: 480px) {
 img.profile-pic{
@@ -341,6 +433,7 @@ flex-direction:column;
 } */
 }
 
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
 
 /*Conditional Styling for "responsive" nav menu */
 @media screen and (max-width: 576px) {
@@ -379,7 +472,11 @@ flex-direction:column;
         display: block;
         padding: 1vh;
       }
+<<<<<<< HEAD
+      .info-container {
+=======
       div.info-container {
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
         max-height: min-content;
         padding-top: 1%;
         flex-direction: row;
@@ -471,7 +568,11 @@ flex-direction:column;
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+<<<<<<< HEAD
+  .info-container{
+=======
   div.info-container{
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
   max-height: 100vh;
   padding-top: 1%;
   flex-direction: row;
@@ -489,7 +590,11 @@ flex-direction:column;
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+<<<<<<< HEAD
+  #img-wrapper > img.profile-pic {
+=======
   div#img-wrapper > img.profile-pic {
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
     flex: 3 1 auto;
     display: inline;
     max-width: auto;
@@ -502,7 +607,11 @@ flex-direction:column;
   #img-wrapper{
     text-align: center;
   }
+<<<<<<< HEAD
+  .info-container{
+=======
   div.info-container{
+>>>>>>> 35debc5e11c58e938836b05193d97d6f3b21559c
     flex-direction: row;
     height:18em;
   }
