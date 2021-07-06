@@ -336,26 +336,29 @@ h4 {
   form{
       margin: 2rem auto;
   }
-  .contact-form{
+  #contact{
       max-width:60vw;
       margin: 0 auto;
       font-size: 1rem;
       text-align: center;
   }
-  label{
-    /* float: left; */
-    margin: .2rem;
+
+  .contact-list{
+    font-size: 2rem;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 4rem;
   }
-  input{
-    display: block;
-      /* text-align: center; */
-      width: 65%;
-      margin: auto;
+  .contact-list li{
+    padding: 1rem 0;
   }
-  textarea{
-      display: block;
-      margin: .2rem;
-      width:100%;
+  b{
+    font-weight: 700;
+    color: var(--red);
+  }
+  .contact-list li a{
+    text-decoration: none;
+    color: var(--red);
   }
 /* Xtra Small Devices*/
 @media only screen and (max-width: 480px) {
