@@ -121,8 +121,7 @@ img.profile-pic {
 }
 #profile-content {
   /* width:100vw; */
-  width: -moz-max-content;
-  width: max-content;
+width: 100%;
   flex: 1 1 auto;
   display: inline-flex;
   flex-direction: column;
@@ -328,7 +327,7 @@ h4 {
     min-width: max-content;
     padding: 0%;
     padding-top: 1vh;
-    font-size: 3em;
+    font-size: 2.6em;
     font-weight: 600;
 
     /* font-size: 1.5em; */
@@ -393,7 +392,7 @@ img.profile-pic{
   max-width: 8em;
 }
 #about p{
-    /* font-size: .7rem; */
+font-size: 1.1rem;
 }
 #img-wrapper{
   max-width: auto;
@@ -517,9 +516,8 @@ flex-direction:column;
         font-family: Ubuntu, -apple-system, Cantarell, "Open Sans", "Helvetica Neue",
           sans-serif;
         font-weight: 300;
-        /* font-size: 4vh; */
-        max-width: fit-content;
-        max-width: -moz-fit-content;
+        font-size: 4vh;
+        
       }
       h1#name,
       #desc {
@@ -535,7 +533,7 @@ flex-direction:column;
       #desc {
         word-wrap: inherit;
         text-align: center;
-        width: max-content;
+        /* width: max-content; */
       }
       main h4 {
         display: block;
