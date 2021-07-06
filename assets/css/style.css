@@ -10,7 +10,7 @@
 }
 /*~~~~~~~~~~~~~~~~~END of Universal Styles~~~~~~~~~~~~~~*/
 i {
-  color: #fff8f0ff;
+  color: #fff8f0;
   font-size: 4vw;
 }
 :root {
@@ -173,7 +173,7 @@ img.profile-pic {
 
 /*~~~~~~~~~~~~~~~~~Social Icon Styling~~~~~~~~~~~~~~~~~*/
 .social-list {
-  color: #fff8f0ff;
+  color: #fff8f0;
   list-style: none;
   float: left;
   padding: 0px;
@@ -296,7 +296,6 @@ h4 {
     align-items: center;
     padding: 0px;
     margin: 0px auto;
-    border
   }
   #profile-content {
     max-height: min-content;
@@ -313,7 +312,6 @@ h4 {
     padding-top: 0.5vw;
     max-width: auto;
     flex: 1 1 33%;
-    min-height: auto;
   }
   .info-container h1#name{
     min-width: max-content;
