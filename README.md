@@ -24,4 +24,4 @@ The project is deployed live at: [https://lukecp5.github.io/Portfolio-Project/](
 ![Screenshot of my Portfolio](https://github.com/lukecp5/Portfolio-Project/blob/main/assets/images/sml-screenshot.png?raw=true)
 
 ### License
-This application is licensed under the MIT License, you can find the full license information [here](https://github.com/lukecp5/coding-quiz/blob/main/LICENSE.txt)
+This application is licensed under the MIT License, you can find the full license information [here](https://github.com/lukecp5/Portfolio-Project/blob/main/LICENSE.txt)
