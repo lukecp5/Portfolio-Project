@@ -23,5 +23,10 @@ The project is deployed live at: [https://lukecp5.github.io/Portfolio-Project/](
 ## Project Screenshot
 ![Screenshot of my Portfolio](https://github.com/lukecp5/Portfolio-Project/blob/main/assets/images/sml-screenshot.png?raw=true)
 
+## Contact Me
+LinkedIn: [@luke-poirrier](https://www.linkedin.com/in/luke-poirrier)
+Email: [Luke@LukePoirrier.com](mailto:Luke@LukePoirrier.com)
+Portfolio: [LukePoirrier.com](http://lukepoirrier.com)
+
 ### License
 This application is licensed under the MIT License, you can find the full license information [here](https://github.com/lukecp5/Portfolio-Project/blob/main/LICENSE.txt)
